@@ -1,6 +1,6 @@
-CS5610 Web Dev Repo
+# CS5610 Web Dev Repo
 
-Wenbo Wang
+# Wenbo Wang
 
 
 # InitAngularProject
