@@ -1,3 +1,4 @@
+
 // Get the dependencies
 
 const express = require('express');
@@ -10,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Point static path to dist -- For building -- REMOVE
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'dist/init-angular-project')));
 
 // CORS
 app.use(function(req, res, next) {
@@ -28,4 +29,21 @@ app.set('port', port);
 const server = http.createServer(app);
 server.listen( port , () => console.log('Running on port 3200'));
 
+/*var dbServer = require('./test-mongodb/app');
+dbServer(app);*/
+
+//require('./test-mongodb/app')(app);
+
+
+// For Build: Catch all other routes and return the index file -- BUILDING
+
+app.get('*', function (req, res) {
+	res.sendFile(path.join(__dirname, '/Users/victorwang/Documents/GitHub/cs5610/dist/init-angular-project/index.html'));
+});
+
+
+
+
 //require('./assignment/app')(app);
+
+
