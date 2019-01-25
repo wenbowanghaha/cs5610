@@ -1,10 +1,3 @@
-# cs5610
-The repo for cs5610 web dev course of NEU Seattle campus
-
-
-V0.1 Init angular project init push
-
-
 # InitAngularProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
